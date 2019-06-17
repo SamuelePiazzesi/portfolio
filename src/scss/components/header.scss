@@ -1,0 +1,36 @@
+
+  .navbar {
+    background-color: $primary-darker;
+    padding: 5px 20px;
+    .navbar-item {
+      color: $grey;
+      display: flex;
+      flex-direction: column;
+      &:hover {
+        color: $grey;
+        background-color: $primary-darker;
+      }
+      &:focus {
+        background-color: $primary-darker;
+      }
+      span {
+        margin-top: 3px;
+        font-size: 13px;
+      }
+    }
+    .active {
+      color: $secondary;
+      &:hover {
+        color: $secondary;
+      }
+    }
+    .normal-link {
+      &:hover {
+        color: $secondary;
+      }
+      &:focus {
+        color: $grey;
+      }
+    }
+
+  }

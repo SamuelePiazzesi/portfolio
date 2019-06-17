@@ -1,0 +1,79 @@
+
+@import "~bulma";
+@import "variables";
+@import "./primitives/icon";
+@import "./primitives/stars";
+@import "./components/header";
+@import "./components/footer";
+@import "./components/presentation";
+@import "./components/projects";
+@import "./components/skills";
+@import "./components/contact";
+
+
+html {
+  min-height: 100%;
+  margin: 0;
+  background-color: $grey;
+
+  body {
+    font-family: $main-font;
+    min-height: 100vh;
+    margin: 0;
+    background-color: $primary-darker;
+    color: $grey;
+
+    .main {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      margin: 0 auto;
+      position: absolute;
+      left: 0;overflow-y: auto;
+      right: 0;
+      .main-container {
+        flex-grow: 1;
+        min-height: 100%;
+        .content {
+          max-width: 900px;
+          min-height: 100%;
+          padding: 2rem 1rem;
+          margin: 0 auto;
+          margin-top: 80px;
+          flex-grow: 1;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          .animated {
+            text-align: center;
+            h1 {
+              font-size: 8rem;
+              color: $grey;
+              margin: 0 0 5px 0;
+            }
+            h2 {
+              color: $grey;
+              font-weight: bold;
+            }
+            h3 {
+              font-size: 1.8rem;
+              color: $secondary;
+            }
+            span {
+              color: $danger;
+            }
+            p {
+              margin: 40px;
+              padding: 20px;
+              font-size: 22px;
+              font-family: $second-font;
+            }
+          }
+        }
+      }
+    }
+  }
+
+
+}

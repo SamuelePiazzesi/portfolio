@@ -1,0 +1,29 @@
+#contact {
+  form {
+    min-width: 700px;
+    label {
+      color: $grey;
+      margin: 10px 0;
+    }
+    input, textarea {
+      font-family: $second-font;
+      padding: 20px;
+      background-color: transparent;
+      border-color: $grey;
+      color: $grey;
+      &::placeholder {
+        color: $grey;
+      }
+    }
+    textarea {
+      min-height: 300px;
+    }
+    button {
+      margin-top: 1.50rem;
+      background-color: $secondary;
+      font-family: $main-font;
+      font-weight: 800;
+    }
+  }
+
+}

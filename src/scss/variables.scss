@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans:200,400,400i,700,700i');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,600,800&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700|Nunito:400,600,700&display=swap');
+@import "~animate.css/animate.min.css";
+
+@font-face {
+  font-family: 'Bebas-Regular';
+  src: url('../../static/fonts/bebas/Bebas-Regular.otf')
+  format('opentype');
+}
+//variables
+$primary: #004E64;
+$primary-lighter: #43B8B7;
+$primary-darker: #002530;
+$grey: #D5E2EB;
+$secondary: #ECA400;
+$success:#38A76F;
+$danger:#E7047D;
+$warning:#EAF8BF;
+
+$main-font : 'Bebas-Regular';
+$second-font : 'Fira Sans', sans-serif;
+$third-font : 'Lato', sans-serif;
+$fourth-font : 'Nunito', sans-serif;
