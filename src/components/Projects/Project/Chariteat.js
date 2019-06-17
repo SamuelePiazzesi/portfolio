@@ -4,7 +4,7 @@ import { Icon } from "../../primitives"
 const Chariteat = () => {
   return (
     <div className={'project'}>
-      <img src="/images/chariteat.svg" />
+      <img src="/src/images/chariteat.svg" />
       <p>
         Chariteat is a site that allows users to book in restaurants and donate
         a portion of the charity account to charity and volunteer associations.
