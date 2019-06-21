@@ -18,14 +18,8 @@ const Header = () => {
           <Link className="navbar-item" to="/">
             <h1>{data.site.siteMetadata.title}</h1>
           </Link>
-          <a role="button" className="navbar-burger burger" aria-label="menu" aria-expanded="false"
-             data-target="navbarBasicExample">
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-          </a>
         </div>
-        <div id="navbarBasicExample" className="navbar-menu">
+        <div id="navbarBasicExample" className="navbar-menu is-active">
           <div className="navbar-end">
             <Link className="navbar-item i-animation" activeClassName="active" to="/projects">
               <Icon name="Rocket"/>

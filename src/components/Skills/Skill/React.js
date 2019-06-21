@@ -1,9 +1,10 @@
 import  React from 'react';
+import logo from '../../../images/skills/react.png';
 
 const ReactSkill =  () => {
   return (
     <div className={'skill'}>
-      <img src={'/images/skills/react.png'}/>
+      <img src={logo}/>
       <h2>React</h2>
     </div>
   )

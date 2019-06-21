@@ -1,10 +1,11 @@
 import React from 'react';
 import { Icon } from "../../primitives"
+import logo from '../../../images/chariteat.svg';
 
 const Chariteat = () => {
   return (
     <div className={'project'}>
-      <img src="/images/chariteat.svg" />
+      <img src={logo} />
       <p>
         Chariteat is a site that allows users to book in restaurants and donate
         a portion of the charity account to charity and volunteer associations.

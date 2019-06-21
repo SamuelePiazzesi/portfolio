@@ -1,9 +1,10 @@
 import  React from 'react';
+import logo from '../../../images/skills/sass.png';
 
 const Sass =  () => {
   return (
     <div className={'skill'}>
-      <img src={'/images/skills/sass.png'}/>
+      <img src={logo}/>
       <h2>Sass</h2>
     </div>
   )

@@ -1,10 +1,11 @@
 import React from 'react';
 import { Icon } from "../../primitives"
+import logo from '../../../images/gp-logo.png';
 
 const GamingPlatform = () => {
   return (
     <div className={'project'}>
-      <img src="/images/gp-logo.png" />
+      <img src={logo} />
         <p>
           Gaming Platform is the gamification engagement platform
           of Friendz which aims to increase the brand's social fanbase
