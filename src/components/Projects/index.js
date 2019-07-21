@@ -1,6 +1,5 @@
 import React from 'react';
 import ScrollAnimation from 'react-animate-on-scroll';
-import {Element} from 'react-scroll'
 import GamingPlatform from "./Project/GamingPlatform"
 import Chariteat from "./Project/Chariteat"
 

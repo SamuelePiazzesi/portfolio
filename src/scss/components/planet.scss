@@ -1,0 +1,72 @@
+.super-moon {
+  position: absolute;
+  height: 320px;
+  @include from($tablet) {
+    height: 450px;
+  }
+  @include from($desktop) {
+    height: 650px;
+    bottom: -800px;
+  }
+  width: 90%;
+  bottom: -300px;
+  left: 5%;
+  overflow: hidden;
+  border-top-left-radius: 1200px;
+  border-top-right-radius: 1200px;
+  box-shadow: inset -16px 4px 5px rgba(0,0,0,0.4);
+  //background: radial-gradient(circle at 5px 175px,  $secondary,  rgb(212,54,0));
+  background: radial-gradient(circle at 5px 175px,  #ffffff,  #646464);
+
+  .crater {
+    height: 100px;
+    width: 100px;
+    margin-top: 25%;
+      margin-left: 50%;
+    @include from($tablet) {
+      width: 250px;
+      height: 250px;
+      margin-top: 20%;
+      margin-left: 60%;
+    }
+    background: rgba(0,0,0,0.6);
+    background: radial-gradient(circle at 5px 175px,  rgb(92,3,1),  rgb(212,54,0));
+    border-radius: 50%;
+    box-shadow: inset 6px -4px 5px rgba(0,0,0,0.4);
+    -webkit-transform: translateX(90px) translateY(-50px) skewX(15deg) skewY(2deg);
+    position: relative;
+  }
+
+
+  .crater2 {
+    @include from($tablet) {
+      width: 80px;
+      height: 80px;
+      margin-left: 60%;
+      margin-top: 8%;
+    }
+    width: 40px;
+    height: 40px;
+    margin-left: 60%;
+    margin-top: 20%;
+    background: rgba(92,3,1,0.6);
+    background: radial-gradient(circle at 5px 175px,  rgb(92,3,1),  rgb(212,54,0));
+    border-radius: 50%;
+    box-shadow: inset 4px -4px 5px rgba(134, 101, 101, 0.4);
+    -webkit-transform: translateX(120px) translateY(-120px) skewX(4deg) skewY(2deg);
+    position: relative;
+  }
+
+  .crater3 {
+    width: 40px;
+    height: 40px;
+    bottom: 50px;
+    margin-left: 50%;
+    background: rgba(92,3,1,0.6);
+    background: radial-gradient(circle at 5px 175px,  rgb(92,3,1),  rgb(212,54,0));
+    border-radius: 50%;
+    box-shadow: inset 3px -4px 5px rgba(0,0,0,0.4);
+    -webkit-transform: translateX(70px) translateY(-280px) skewX(4deg) skewY(2deg);
+    position: relative;
+  }
+}

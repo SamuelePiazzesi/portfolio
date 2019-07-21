@@ -1,14 +1,11 @@
 #skills {
   margin: 40px 0;
   padding: 20px 40px;
-  display: flex;
-  flex-wrap: wrap;
   .skill {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    width: 25%;
     padding: 10px;
 
     img {

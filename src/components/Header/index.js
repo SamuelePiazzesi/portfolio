@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link , graphql, useStaticQuery} from "gatsby";
 import { Icon } from "../primitives"
+import logo from '../../images/worldwide.svg';
 
 const Header = () => {
   const data = useStaticQuery(graphql`
@@ -13,13 +14,13 @@ const Header = () => {
     }
  `)
   return (
-      <nav className="navbar is-fixed-top" role="navigation" aria-label="main navigation">
+      <nav className="navbar is-fixed-top" id={'navbar-top'} role="navigation" aria-label="main navigation">
         <div className="navbar-brand">
           <Link className="navbar-item" to="/">
-            <h1>{data.site.siteMetadata.title}</h1>
+            <img src={logo} id="home-logo"/>
           </Link>
         </div>
-        <div id="navbarBasicExample" className="navbar-menu is-active">
+        <div id="navbarBasicExample" className="navbar-menu">
           <div className="navbar-end">
             <Link className="navbar-item i-animation" activeClassName="active" to="/projects">
               <Icon name="Rocket"/>
@@ -27,7 +28,7 @@ const Header = () => {
             </Link>
             <Link className="navbar-item i-animation" activeClassName="active" to="/skills">
               <Icon name="Info"/>
-              <span>My skills</span>
+              <span>Skills</span>
             </Link>
             <Link className="navbar-item i-animation" activeClassName="active" to="/contact">
               <Icon name="Mail"/>

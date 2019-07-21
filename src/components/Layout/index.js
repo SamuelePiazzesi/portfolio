@@ -2,6 +2,7 @@ import React from 'react';
 import Header from "../Header";
 import Footer from "../Footer";
 import '../../scss/main.scss';
+import Planet from "../Planet"
 
 
 const Layout = ({children}) => {
@@ -19,8 +20,9 @@ const Layout = ({children}) => {
             {children}
           </div>
         </div>
-        <Footer/>
+        <Planet/>
       </div>
+      <Footer/>
     </div>
   )
 }

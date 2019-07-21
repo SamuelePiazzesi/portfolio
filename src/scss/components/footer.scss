@@ -1,5 +1,51 @@
-.footer {
+#navbar-bottom {
   background-color: $primary-darker;
-  color: $grey;
-  padding: 20px 40px;
+  padding: 5px 20px;
+  display: none;
+  @include until($tablet) {
+    display: flex;
+  }
+  .navbar-mobile-menu {
+    width: 100%;
+
+    .navbar-center {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      .navbar-item {
+        width: 20%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: $grey;
+        flex-direction: column;
+        &:hover {
+          color: $secondary;
+          background-color: $primary-darker;
+        }
+        &:focus{
+          background-color: $primary-darker;
+          color: $grey;
+        }
+        span {
+          margin-top: 3px;
+          font-size: 13px;
+        }
+      }
+      .active {
+        color: $secondary;
+        &:hover {
+          color: $secondary;
+        }
+      }
+      .normal-link {
+        &:hover {
+          color: $secondary;
+        }
+        &:focus {
+          color: $grey;
+        }
+      }
+    }
+  }
 }

@@ -1,21 +1,26 @@
 
-  .navbar {
+  #navbar-top {
     background-color: $primary-darker;
     padding: 5px 20px;
     display: none;
     @include from($tablet) {
       display: flex;
     }
+    #home-logo {
+      height: 46px;
+    
+    }
     .navbar-item {
       color: $grey;
       display: flex;
       flex-direction: column;
       &:hover {
-        color: $grey;
+        color: $secondary;
         background-color: $primary-darker;
       }
       &:focus{
         background-color: $primary-darker;
+        color: $grey;
       }
       span {
         margin-top: 3px;
@@ -36,5 +41,4 @@
         color: $grey;
       }
     }
-
   }

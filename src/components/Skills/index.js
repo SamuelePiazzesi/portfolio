@@ -1,6 +1,5 @@
 import React from 'react';
 import ScrollAnimation from 'react-animate-on-scroll';
-import {Element} from 'react-scroll'
 import Javascript from "./Skill/Javascript"
 import ReactSkill from "./Skill/React"
 import Node from "./Skill/Node"
@@ -13,21 +12,25 @@ import Sass from "./Skill/Sass"
 
 const Skills = () => {
   return (
-    <Element name='skills'>
+    <div className='skills'>
       <ScrollAnimation animateIn='fadeIn'>
         <h1>My skills</h1>
-        <div id={'skills'}>
+        <div id="skills">
+          <div className="columns is-tablet">
           <Javascript/>
           <Sass/>
           <ReactSkill/>
           <Node/>
+          </div>
+          <div className="columns is-tablet">
           <Laravel/>
           <Sql/>
           <PostGresql/>
           <Git/>
+          </div>
         </div>
       </ScrollAnimation>
-    </Element>
+    </div>
   )
 }
 

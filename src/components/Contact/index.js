@@ -1,38 +1,53 @@
 import React from 'react';
-import ScrollAnimation from 'react-animate-on-scroll';
+import { Formik, Form, Field, ErrorMessage } from "formik";
+import * as Yup from 'yup';
 
+const contactValidationSchema = Yup.object().shape({
+  email: Yup.string()
+    .email('Enter a valid email :(')
+    .required('The email is required :)'),
+  text: Yup.string()
+  .required('You should probably write something :)')
+});
 
 const Contact = () => {
   return (
     <div id='contact'>
-      <ScrollAnimation animateIn='fadeIn'>
-        <h1>Contact</h1>
-        <form>
+      <h1>Contact</h1>
+      <Formik
+      initialValues={{ email: '', text: '' }}
+      validationSchema={contactValidationSchema}
+      onSubmit={(values, { setSubmitting }) => {
+        setTimeout(() => {
+          alert(JSON.stringify(values, null, 2));
+          setSubmitting(false);
+        }, 400);
+      }}
+      >
+      {({ isSubmitting }) => (
+        <Form>
           <div className="field">
             <label className="label is-pulled-left">Email</label>
             <div className="control has-icons-left has-icons-right">
-              <input className="input is-danger" email type="email" placeholder="Your email here..." />
-              <span className="icon is-small is-left">
-                <i className="fas fa-envelope"></i>
-              </span>
-              <span className="icon is-small is-right">
-                <i className="fas fa-exclamation-triangle"></i>
-              </span>
+              <Field type="email" name="email" className="input" placeholder="Your email here..."/>
+              <ErrorMessage name="email" component="span" />
             </div>
           </div>
           <div className="field">
             <label className="label is-pulled-left">Message</label>
-            <div className="control">
-              <textarea className="textarea" placeholder="Tell me something..."></textarea>
+            <div className="control has-icons-left has-icons-right">
+              <Field type="textarea" name="text" component="textarea" className="textarea" placeholder="Tell me something..."/>
+              <ErrorMessage name="text" component="span" />
             </div>
           </div>
           <div className="field">
             <div className="control">
-              <button className="button is-link is-large is-fullwidth">Submit</button>
+              <button type="submit" disabled={isSubmitting} className="button is-link is-large is-fullwidth">Submit</button>
             </div>
           </div>
-        </form>
-      </ScrollAnimation>
+        </Form>
+      )}
+    </Formik>
     </div>
   )
 }

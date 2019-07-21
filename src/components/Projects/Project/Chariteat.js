@@ -15,7 +15,7 @@ const Chariteat = () => {
         frontend and creating an administrative management panel.
       </p>
       <div className={'links'}>
-        <a className="button is-outlined is-rounded">
+        <a className="button is-outlined ">
           <Icon name={'External'} size={'20'}/>
         </a>
         <a className="button is-outlined">
